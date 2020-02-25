@@ -44,7 +44,7 @@ const addNote = (title, text) => {
 
 const listNotes = () => {
     getNotes(notes => {
-        if (notes.lenght) {
+        if (notes.lenght != 0) {
             console.log(chalk.inverse('Your notes:'));
 
             notes.forEach((note) => {
